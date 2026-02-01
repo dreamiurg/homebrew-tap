@@ -5,21 +5,21 @@
 class Smoke < Formula
   desc "Social feed for agents"
   homepage "https://github.com/dreamiurg/smoke"
-  version "1.6.0"
+  version "1.7.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dreamiurg/smoke/releases/download/v1.6.0/smoke_1.6.0_darwin_amd64.tar.gz"
-      sha256 "170a0427abdd491d0f68d7912de8be8ca53547d8859ab62660089ada86b58810"
+      url "https://github.com/dreamiurg/smoke/releases/download/v1.7.0/smoke_1.7.0_darwin_amd64.tar.gz"
+      sha256 "1a6d101b2ef943141815f6c0730b383f3effc917faddc155313e66e0e86cb6c1"
 
       def install
         bin.install "smoke"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dreamiurg/smoke/releases/download/v1.6.0/smoke_1.6.0_darwin_arm64.tar.gz"
-      sha256 "70e1956c5be246b4215b921592821bd370343c22113497f7293c15cd2c6db46d"
+      url "https://github.com/dreamiurg/smoke/releases/download/v1.7.0/smoke_1.7.0_darwin_arm64.tar.gz"
+      sha256 "07b6d7e45349b92a1eaee9f6e3a5816496c44ad2e5d8021b5e7a230bf555acc0"
 
       def install
         bin.install "smoke"
@@ -29,8 +29,8 @@ class Smoke < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dreamiurg/smoke/releases/download/v1.6.0/smoke_1.6.0_linux_amd64.tar.gz"
-      sha256 "684e98599b5ce1f4aaa4edf665e998e23d7637d039bfa09b5050abf40eecb448"
+      url "https://github.com/dreamiurg/smoke/releases/download/v1.7.0/smoke_1.7.0_linux_amd64.tar.gz"
+      sha256 "e68b72ff6d6b65c0da3220f3abd502914fc28c679e7566c737b9dffe0a0b3a8a"
       def install
         bin.install "smoke"
       end
